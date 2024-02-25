@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Availability Tracker</title>
+    <link rel="stylesheet" href="cdn/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <div class="logo">
+          <img src="cdn/images/logo.png" alt="logo" />
+          GiveEase
+        </div>
+        <div class="navbar">
+          <div><a href="home.html">Home</a></div>
+          <div><a href="help.html">Help</a></div>
+          <div><a href="learn.html">Learn</a></div>
+          <div><a href="livelihood.html">Livelihood</a></div>
+          <div><a href="contact.html">contact</a></div>
+        </div>
+      </nav>
+    </div>
+    <div class="help_container">
+      <div class="input-box">
+        <label for="category">Category:</label>
+        <select id="category">
+          <option value="food">Food</option>
+          <option value="clothes">Clothes</option>
+          <option value="groceries">Groceries</option>
+          <option value="medicines">Medicines</option>
+          <option value="money">Blankets</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter name" />
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" placeholder="Enter address" />
+
+        <button onclick="addItem()">Add Item</button>
+      </div>
+
+      <div id="container">
+        <!-- Boxes will be dynamically added here -->
+      </div>
+    </div>
+
+    <script src="cdn/scriptlearn.js"></script>
+  </body>
+</html>
